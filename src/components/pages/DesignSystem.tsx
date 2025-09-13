@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Tile, PanelHeader } from '../molecules';
 import { HeartIcon, StarIcon, ZoomInIcon, ZoomOutIcon } from '../icons';
+import { VariableLibrary } from '../atoms';
 import './DesignSystem.css';
 
 const DesignSystem: React.FC = () => {
@@ -255,32 +256,44 @@ const DesignSystem: React.FC = () => {
                     </div>
                 </section>
 
-                {/* Icons Showcase */}
-                <section className="component-showcase">
-                    <div className="component-header">
-                        <h2>Icon Collection</h2>
-                        <p>Available icons from the Lucida icon set</p>
-                    </div>
+        {/* Variable Library Showcase */}
+        <section className="component-showcase">
+          <div className="component-header">
+            <h2>Variable Library</h2>
+            <p>Complete design system variables including colors, spacing, and typography</p>
+          </div>
+          
+          <div className="variable-library-preview">
+            <VariableLibrary />
+          </div>
+        </section>
 
-                    <div className="icons-grid">
-                        <div className="icon-item">
-                            <HeartIcon size={32} />
-                            <span>Heart</span>
-                        </div>
-                        <div className="icon-item">
-                            <StarIcon size={32} />
-                            <span>Star</span>
-                        </div>
-                        <div className="icon-item">
-                            <ZoomInIcon size={32} />
-                            <span>Zoom In</span>
-                        </div>
-                        <div className="icon-item">
-                            <ZoomOutIcon size={32} />
-                            <span>Zoom Out</span>
-                        </div>
-                    </div>
-                </section>
+        {/* Icons Showcase */}
+        <section className="component-showcase">
+          <div className="component-header">
+            <h2>Icon Collection</h2>
+            <p>Available icons from the Lucida icon set</p>
+          </div>
+          
+          <div className="icons-grid">
+            <div className="icon-item">
+              <HeartIcon size={32} />
+              <span>Heart</span>
+            </div>
+            <div className="icon-item">
+              <StarIcon size={32} />
+              <span>Star</span>
+            </div>
+            <div className="icon-item">
+              <ZoomInIcon size={32} />
+              <span>Zoom In</span>
+            </div>
+            <div className="icon-item">
+              <ZoomOutIcon size={32} />
+              <span>Zoom Out</span>
+            </div>
+          </div>
+        </section>
             </div>
         </div>
     );

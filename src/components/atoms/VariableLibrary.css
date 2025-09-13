@@ -1,0 +1,140 @@
+.variable-library {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--item-spacing);
+  padding: var(--section-spacing);
+}
+
+/* Color Variables */
+.variable-color {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px 0 0 0;
+  position: relative;
+}
+
+.color-visual {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  position: relative;
+  border: 1px solid black;
+}
+
+/* Spacing Variables */
+.spacing-bar {
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 116px;
+}
+
+.spacing-1 {
+  height: 4px;
+}
+
+.spacing-2 {
+  height: 8px;
+}
+
+.spacing-4 {
+  height: 16px;
+}
+
+.spacing-5 {
+  height: 20px;
+}
+
+.spacing-6 {
+  height: 24px;
+}
+
+.spacing-2-alt {
+  height: 8px;
+}
+
+/* Typography Variables */
+.typography-sample {
+  position: absolute;
+  left: 28px;
+  top: 41px;
+  white-space: nowrap;
+}
+
+.typography-sample p {
+  margin: 0;
+  padding: 0;
+}
+
+.typography-h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: black;
+}
+
+.typography-h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: black;
+}
+
+.typography-h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 28px;
+  color: black;
+}
+
+.typography-h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+}
+
+.typography-body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+}
+
+.typography-body-s {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+}
+
+/* Variable Group */
+.variable-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.variable-group .variable-color {
+  position: relative;
+  flex-shrink: 0;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionCarousel from './SectionCarousel';
-import SectionHero from './SectionHero';
-import Divider from './Divider';
+import SectionCarousel from '../organisms/SectionCarousel';
+import SectionHero from '../organisms/SectionHero';
+import Divider from '../organisms/Divider';
 import './Homepage.css';
 
 const Homepage: React.FC = () => {

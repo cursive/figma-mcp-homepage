@@ -1,0 +1,19 @@
+.radio-checked {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.radio-checked-outline {
+    position: absolute;
+    inset: 8.333%;
+    width: 100%;
+    height: 100%;
+}
+
+.radio-checked-dot {
+    position: absolute;
+    inset: 25%;
+    width: 50%;
+    height: 50%;
+}

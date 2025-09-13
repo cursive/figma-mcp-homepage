@@ -1,0 +1,9 @@
+export { default as HeartIcon } from './Heart';
+export { default as StarIcon } from './Star';
+export { default as MergeIcon } from './Merge';
+export { default as MenuIcon } from './Menu';
+export { default as ZoomOutIcon } from './ZoomOut';
+export { default as ZoomInIcon } from './ZoomIn';
+export { default as ZapOffIcon } from './ZapOff';
+export { default as ZapIcon } from './Zap';
+export { default as YoutubeIcon } from './Youtube';

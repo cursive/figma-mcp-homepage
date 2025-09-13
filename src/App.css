@@ -15,3 +15,44 @@ body {
   padding: 0;
   font-family: var(--font-family-body);
 }
+
+.app-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-base-primary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: var(--item-spacing) var(--side-spacing);
+  display: flex;
+  gap: var(--item-spacing);
+  z-index: 1000;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: var(--background-base-primary);
+  color: var(--foreground-base-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--background-base-secondary);
+}
+
+.nav-button.active {
+  background-color: var(--foreground-base-primary);
+  color: var(--background-base-primary);
+  border-color: var(--foreground-base-primary);
+}
+
+/* Add top padding to account for fixed nav */
+.design-system,
+.homepage {
+  padding-top: 60px;
+}

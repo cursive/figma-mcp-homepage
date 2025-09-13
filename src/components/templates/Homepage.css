@@ -6,6 +6,6 @@
     width: 100%;
     max-width: 393px;
     margin: 0 auto;
-    background-color: var(--background-base-secondary);
+    background-color: var(--background-base-primary);
     min-height: 100vh;
 }

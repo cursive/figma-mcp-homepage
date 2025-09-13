@@ -1,0 +1,74 @@
+/* Design System Variables - Mirrored from Figma */
+
+/* CSS Reset - Remove all default HTML spacing and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset text elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Reset list elements */
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Reset other elements */
+button,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+}
+
+/* Colors */
+:root {
+    /* Foreground Colors */
+    --foreground-base-primary: #141414;
+    --foreground-base-secondary: rgba(0, 0, 0, 0.6);
+
+    /* Background Colors */
+    --background-base-primary: #ffffff;
+    --background-base-secondary: #f5f5f5;
+
+    /* Spacing Variables */
+    --icon-gap: 8px;
+    --line-spacing: 4px;
+    --item-spacing: 8px;
+    --side-spacing: 20px;
+    --section-spacing: 24px;
+
+    /* Typography Variables */
+    --font-family-body: 'Open Sans', sans-serif;
+    --font-size-body-s: 14px;
+    --line-height-body-s: 18px;
+    --font-size-body: 16px;
+    --line-height-body: 22px;
+    --font-size-heading: 16px;
+    --line-height-heading: 1.1;
+
+    /* Component Specific */
+    --star-color: #FFD700;
+    --divider-opacity: 0.1;
+}

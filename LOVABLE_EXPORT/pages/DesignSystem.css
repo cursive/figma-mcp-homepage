@@ -1,0 +1,199 @@
+.design-system {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--section-spacing);
+    background-color: var(--background-base-secondary);
+    min-height: 100vh;
+}
+
+.design-system-header {
+    text-align: center;
+    margin-bottom: var(--section-spacing);
+    padding: var(--section-spacing) 0;
+}
+
+.design-system-header h1 {
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--foreground-base-primary);
+    margin-bottom: var(--item-spacing);
+}
+
+.design-system-header p {
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-secondary);
+    line-height: var(--line-height-body);
+}
+
+.design-system-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-spacing);
+}
+
+.component-showcase {
+    background-color: var(--background-base-primary);
+    border-radius: 12px;
+    padding: var(--section-spacing);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.component-header {
+    margin-bottom: var(--section-spacing);
+    padding-bottom: var(--item-spacing);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.component-header h2 {
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--foreground-base-primary);
+    margin-bottom: var(--line-spacing);
+}
+
+.component-header p {
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-secondary);
+    line-height: var(--line-height-body);
+}
+
+.component-demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--section-spacing);
+    align-items: start;
+}
+
+.component-preview {
+    background-color: var(--background-base-secondary);
+    padding: var(--section-spacing);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.component-controls {
+    background-color: var(--background-base-secondary);
+    padding: var(--section-spacing);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.component-controls h3 {
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--foreground-base-primary);
+    margin-bottom: var(--item-spacing);
+}
+
+.control-group {
+    margin-bottom: var(--item-spacing);
+}
+
+.control-group h4 {
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--foreground-base-primary);
+    margin-bottom: var(--line-spacing);
+}
+
+.control-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--line-spacing);
+}
+
+.control-row label {
+    display: flex;
+    align-items: center;
+    gap: var(--line-spacing);
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-primary);
+    cursor: pointer;
+}
+
+.control-row input[type="radio"],
+.control-row input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+.control-row input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-primary);
+    background-color: var(--background-base-primary);
+}
+
+.control-row input[type="text"]:focus {
+    outline: none;
+    border-color: var(--foreground-base-primary);
+    box-shadow: 0 0 0 2px rgba(20, 20, 20, 0.1);
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--item-spacing);
+    padding: var(--section-spacing);
+    background-color: var(--background-base-secondary);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--line-spacing);
+    padding: var(--item-spacing);
+    background-color: var(--background-base-primary);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.icon-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-item span {
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body-s);
+    color: var(--foreground-base-secondary);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .component-demo {
+        grid-template-columns: 1fr;
+    }
+
+    .control-row {
+        flex-direction: column;
+    }
+
+    .icons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}

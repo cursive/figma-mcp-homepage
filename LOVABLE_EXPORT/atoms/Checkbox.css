@@ -1,0 +1,52 @@
+.checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-background {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--foreground-base-primary);
+    border-radius: 2px;
+}
+
+.checkbox-border {
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--foreground-base-primary);
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.checkbox-check {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.checkbox-check-icon {
+    position: absolute;
+    bottom: 29.17%;
+    left: 16.67%;
+    right: 16.67%;
+    top: 25%;
+    width: 100%;
+    height: 100%;
+}
+
+.checkbox-checked .checkbox-background {
+    background-color: var(--foreground-base-primary);
+}
+
+.checkbox-unchecked .checkbox-background {
+    background-color: transparent;
+}

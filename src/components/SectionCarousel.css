@@ -1,0 +1,26 @@
+.section-carousel {
+    background-color: var(--background-base-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 525.5px;
+}
+
+.carousel-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 525.5px;
+    width: 393px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-image-placeholder {
+    font-size: 48px;
+    opacity: 0.3;
+}

@@ -1,230 +1,231 @@
 .variable-library {
-  background-color: var(--background-base-primary);
-  padding: var(--section-spacing);
-  display: flex;
-  flex-direction: column;
-  gap: var(--section-spacing);
-  max-width: 100%;
+    background-color: var(--background-base-primary);
+    padding: var(--section-spacing);
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-spacing);
+    max-width: 100%;
 }
 
 /* Section Styling */
 .variable-section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--item-spacing);
+    display: flex;
+    flex-direction: column;
+    gap: var(--item-spacing);
 }
 
 .section-title {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: var(--font-size-h2);
-  color: var(--foreground-base-primary);
-  margin: 0;
-  padding-bottom: var(--item-spacing);
-  border-bottom: 1px solid var(--foreground-base-secondary);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: var(--font-size-h2);
+    color: var(--foreground-base-primary);
+    margin: 0;
+    padding-bottom: var(--item-spacing);
+    border-bottom: 1px solid var(--foreground-base-secondary);
 }
 
 /* Color System */
 .color-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: var(--item-spacing);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--item-spacing);
 }
 
 .color-item {
-  display: flex;
-  align-items: center;
-  gap: var(--item-spacing);
-  padding: var(--item-spacing);
-  background-color: var(--background-base-secondary);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: var(--item-spacing);
+    padding: var(--item-spacing);
+    background-color: var(--background-base-secondary);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .color-swatch {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  flex-shrink: 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .color-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
 }
 
 .color-name {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: var(--font-size-body);
-  color: var(--foreground-base-primary);
-  line-height: var(--line-height-body);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-primary);
+    line-height: var(--line-height-body);
 }
 
 .color-value {
-  font-family: var(--font-family-body);
-  font-weight: 400;
-  font-size: var(--font-size-body-s);
-  color: var(--foreground-base-secondary);
-  line-height: var(--line-height-body-s);
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body-s);
+    color: var(--foreground-base-secondary);
+    line-height: var(--line-height-body-s);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
 /* Spacing System */
 .spacing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: var(--item-spacing);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--item-spacing);
 }
 
 .spacing-item {
-  display: flex;
-  flex-direction: column;
-  gap: var(--line-spacing);
-  padding: var(--item-spacing);
-  background-color: var(--background-base-secondary);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--line-spacing);
+    padding: var(--item-spacing);
+    background-color: var(--background-base-secondary);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .spacing-visual {
-  background-color: var(--foreground-base-primary);
-  border-radius: 4px;
-  width: 100%;
-  min-height: 4px;
+    background-color: var(--foreground-base-primary);
+    border-radius: 4px;
+    width: 100%;
+    min-height: 4px;
 }
 
 .spacing-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .spacing-name {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: var(--font-size-body);
-  color: var(--foreground-base-primary);
-  line-height: var(--line-height-body);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-primary);
+    line-height: var(--line-height-body);
 }
 
 .spacing-value {
-  font-family: var(--font-family-body);
-  font-weight: 400;
-  font-size: var(--font-size-body-s);
-  color: var(--foreground-base-secondary);
-  line-height: var(--line-height-body-s);
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body-s);
+    color: var(--foreground-base-secondary);
+    line-height: var(--line-height-body-s);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
 /* Typography System */
 .typography-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: var(--item-spacing);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--item-spacing);
 }
 
 .typography-item {
-  display: flex;
-  flex-direction: column;
-  gap: var(--line-spacing);
-  padding: var(--item-spacing);
-  background-color: var(--background-base-secondary);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--line-spacing);
+    padding: var(--item-spacing);
+    background-color: var(--background-base-secondary);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .typography-sample {
-  margin: 0;
-  padding: 0;
-  color: var(--foreground-base-primary);
+    margin: 0;
+    padding: 0;
+    color: var(--foreground-base-primary);
 }
 
 .typography-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .typography-name {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: var(--font-size-body);
-  color: var(--foreground-base-primary);
-  line-height: var(--line-height-body);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: var(--font-size-body);
+    color: var(--foreground-base-primary);
+    line-height: var(--line-height-body);
 }
 
 .typography-value {
-  font-family: var(--font-family-body);
-  font-weight: 400;
-  font-size: var(--font-size-body-s);
-  color: var(--foreground-base-secondary);
-  line-height: var(--line-height-body-s);
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: var(--font-size-body-s);
+    color: var(--foreground-base-secondary);
+    line-height: var(--line-height-body-s);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
 /* Typography Samples */
 .typography-h1 {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  color: var(--foreground-base-primary);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--foreground-base-primary);
 }
 
 .typography-h2 {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--foreground-base-primary);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--foreground-base-primary);
 }
 
 .typography-h3 {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 28px;
-  color: var(--foreground-base-primary);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 28px;
+    color: var(--foreground-base-primary);
 }
 
 .typography-h4 {
-  font-family: var(--font-family-body);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--foreground-base-primary);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--foreground-base-primary);
 }
 
 .typography-body {
-  font-family: var(--font-family-body);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--foreground-base-primary);
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--foreground-base-primary);
 }
 
 .typography-body-s {
-  font-family: var(--font-family-body);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--foreground-base-primary);
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--foreground-base-primary);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .color-grid,
-  .spacing-grid,
-  .typography-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .variable-library {
-    padding: var(--item-spacing);
-  }
+
+    .color-grid,
+    .spacing-grid,
+    .typography-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .variable-library {
+        padding: var(--item-spacing);
+    }
 }

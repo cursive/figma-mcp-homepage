@@ -1,0 +1,48 @@
+.icon-line {
+  background-color: var(--background-base-primary);
+  display: flex;
+  gap: var(--icon-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.icon-line-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-line-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--foreground-base-primary);
+}
+
+.icon-line-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  padding: 2px 0;
+}
+
+.icon-line-text {
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  font-size: var(--font-size-body);
+  color: var(--foreground-base-primary);
+  line-height: var(--line-height-body);
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  min-width: 0;
+}

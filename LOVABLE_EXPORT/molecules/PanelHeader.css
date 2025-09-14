@@ -31,11 +31,21 @@
 .panel-header-title-text {
     font-family: var(--font-family-body);
     font-weight: 600;
-    font-size: 21px;
     color: var(--foreground-base-primary);
-    line-height: 28px;
     flex: 1;
     min-width: 0;
+}
+
+/* Primary variant uses H2 typography */
+.panel-header-primary .panel-header-title-text {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* Secondary variant uses H3 typography */
+.panel-header-secondary .panel-header-title-text {
+    font-size: 21px;
+    line-height: 28px;
 }
 
 .panel-header-chevron {

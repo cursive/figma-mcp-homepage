@@ -19,40 +19,41 @@ const DesignSystem: React.FC = () => {
 
   // PanelHeader component state
   const [panelVariant, setPanelVariant] = useState<'primary' | 'secondary'>('primary');
+  const [panelShowEyebrow, setPanelShowEyebrow] = useState(true);
   const [panelShowChevron, setPanelShowChevron] = useState(true);
   const [panelShowSub, setPanelShowSub] = useState(true);
   const [panelLabel, setPanelLabel] = useState("What you'll get");
   const [panelTitle, setPanelTitle] = useState("What you'll get");
   const [panelSubtitle, setPanelSubtitle] = useState("Sub");
 
-  // IconLine component state
-  const [iconLineText, setIconLineText] = useState("Priority reservations");
-  const [iconLineShowIcon, setIconLineShowIcon] = useState(true);
+    // IconLine component state
+    const [iconLineText, setIconLineText] = useState("Priority reservations");
+    const [iconLineShowIcon, setIconLineShowIcon] = useState(true);
 
-  // MemberPerks component state
-  const [memberPerksTitle, setMemberPerksTitle] = useState("Member perks");
-  const [memberPerksShowTitle, setMemberPerksShowTitle] = useState(true);
-  const [memberPerksList, setMemberPerksList] = useState([
-    "Priority reservations",
-    "Exclusive menu items", 
-    "Member-only events"
-  ]);
+    // MemberPerks component state
+    const [memberPerksTitle, setMemberPerksTitle] = useState("Member perks");
+    const [memberPerksShowTitle, setMemberPerksShowTitle] = useState(true);
+    const [memberPerksList, setMemberPerksList] = useState([
+        "Priority reservations",
+        "Exclusive menu items",
+        "Member-only events"
+    ]);
 
-  // WhatYouNeedToKnow component state
-  const [whatYouNeedTitle, setWhatYouNeedTitle] = useState("What you need to know");
-  const [whatYouNeedShowTitle, setWhatYouNeedShowTitle] = useState(true);
-  const [whatYouNeedList, setWhatYouNeedList] = useState([
-    "Pick-up or delivery",
-    "Next order June 2025",
-    "Pause or cancel any time"
-  ]);
+    // WhatYouNeedToKnow component state
+    const [whatYouNeedTitle, setWhatYouNeedTitle] = useState("What you need to know");
+    const [whatYouNeedShowTitle, setWhatYouNeedShowTitle] = useState(true);
+    const [whatYouNeedList, setWhatYouNeedList] = useState([
+        "Pick-up or delivery",
+        "Next order June 2025",
+        "Pause or cancel any time"
+    ]);
 
-  // SectionSupporting component state
-  const [sectionSupportingTitle, setSectionSupportingTitle] = useState("What you'll get");
-  const [sectionSupportingDescription, setSectionSupportingDescription] = useState("I grew up watching my aunt cook and exploring San Francisco's food scene. Instead of a night out, I wanted to create something you could enjoy at home—relaxed, personal, and just as special.");
-  const [sectionSupportingShowImage, setSectionSupportingShowImage] = useState(true);
-  const [sectionSupportingShowTitle, setSectionSupportingShowTitle] = useState(true);
-  const [sectionSupportingShowDescription, setSectionSupportingShowDescription] = useState(true);
+    // SectionSupporting component state
+    const [sectionSupportingTitle, setSectionSupportingTitle] = useState("What you'll get");
+    const [sectionSupportingDescription, setSectionSupportingDescription] = useState("I grew up watching my aunt cook and exploring San Francisco's food scene. Instead of a night out, I wanted to create something you could enjoy at home—relaxed, personal, and just as special.");
+    const [sectionSupportingShowImage, setSectionSupportingShowImage] = useState(true);
+    const [sectionSupportingShowTitle, setSectionSupportingShowTitle] = useState(true);
+    const [sectionSupportingShowDescription, setSectionSupportingShowDescription] = useState(true);
 
     return (
         <div className="design-system">
@@ -204,6 +205,7 @@ const DesignSystem: React.FC = () => {
                         <div className="component-preview">
               <PanelHeader
                 variant={panelVariant}
+                showEyebrow={panelShowEyebrow}
                 showChevron={panelShowChevron}
                 showSub={panelShowSub}
                 label={panelLabel}
@@ -244,6 +246,14 @@ const DesignSystem: React.FC = () => {
               <div className="control-group">
                 <h4>Boolean Toggles</h4>
                 <div className="control-row">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={panelShowEyebrow}
+                      onChange={(e) => setPanelShowEyebrow(e.target.checked)}
+                    />
+                    Show Eyebrow
+                  </label>
                   <label>
                     <input
                       type="checkbox"
@@ -296,242 +306,242 @@ const DesignSystem: React.FC = () => {
                     </div>
                 </section>
 
-        {/* IconLine Component Showcase */}
-        <section className="component-showcase">
-          <div className="component-header">
-            <h2>IconLine Component</h2>
-            <p>Reusable component for icon + text combinations</p>
-          </div>
-          
-          <div className="component-demo">
-            <div className="component-preview">
-              <IconLine
-                text={iconLineText}
-                showIcon={iconLineShowIcon}
-              />
-            </div>
-            
-            <div className="component-controls">
-              <h3>Controls</h3>
-              
-              <div className="control-group">
-                <h4>Boolean Toggles</h4>
-                <div className="control-row">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={iconLineShowIcon}
-                      onChange={(e) => setIconLineShowIcon(e.target.checked)}
-                    />
-                    Show Icon
-                  </label>
-                </div>
-              </div>
+                {/* IconLine Component Showcase */}
+                <section className="component-showcase">
+                    <div className="component-header">
+                        <h2>IconLine Component</h2>
+                        <p>Reusable component for icon + text combinations</p>
+                    </div>
 
-              <div className="control-group">
-                <h4>Text Content</h4>
-                <div className="control-row">
-                  <label>
-                    Text:
-                    <input
-                      type="text"
-                      value={iconLineText}
-                      onChange={(e) => setIconLineText(e.target.value)}
-                    />
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                    <div className="component-demo">
+                        <div className="component-preview">
+                            <IconLine
+                                text={iconLineText}
+                                showIcon={iconLineShowIcon}
+                            />
+                        </div>
 
-        {/* MemberPerks Component Showcase */}
-        <section className="component-showcase">
-          <div className="component-header">
-            <h2>MemberPerks Component</h2>
-            <p>List component for member benefits with icons</p>
-          </div>
-          
-          <div className="component-demo">
-            <div className="component-preview">
-              <MemberPerks
-                title={memberPerksTitle}
-                perks={memberPerksList}
-                showTitle={memberPerksShowTitle}
-              />
-            </div>
-            
-            <div className="component-controls">
-              <h3>Controls</h3>
-              
-              <div className="control-group">
-                <h4>Boolean Toggles</h4>
-                <div className="control-row">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={memberPerksShowTitle}
-                      onChange={(e) => setMemberPerksShowTitle(e.target.checked)}
-                    />
-                    Show Title
-                  </label>
-                </div>
-              </div>
+                        <div className="component-controls">
+                            <h3>Controls</h3>
 
-              <div className="control-group">
-                <h4>Text Content</h4>
-                <div className="control-row">
-                  <label>
-                    Title:
-                    <input
-                      type="text"
-                      value={memberPerksTitle}
-                      onChange={(e) => setMemberPerksTitle(e.target.value)}
-                    />
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                            <div className="control-group">
+                                <h4>Boolean Toggles</h4>
+                                <div className="control-row">
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={iconLineShowIcon}
+                                            onChange={(e) => setIconLineShowIcon(e.target.checked)}
+                                        />
+                                        Show Icon
+                                    </label>
+                                </div>
+                            </div>
 
-        {/* WhatYouNeedToKnow Component Showcase */}
-        <section className="component-showcase">
-          <div className="component-header">
-            <h2>WhatYouNeedToKnow Component</h2>
-            <p>List component with smart icon selection</p>
-          </div>
-          
-          <div className="component-demo">
-            <div className="component-preview">
-              <WhatYouNeedToKnow
-                title={whatYouNeedTitle}
-                items={whatYouNeedList}
-                showTitle={whatYouNeedShowTitle}
-              />
-            </div>
-            
-            <div className="component-controls">
-              <h3>Controls</h3>
-              
-              <div className="control-group">
-                <h4>Boolean Toggles</h4>
-                <div className="control-row">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={whatYouNeedShowTitle}
-                      onChange={(e) => setWhatYouNeedShowTitle(e.target.checked)}
-                    />
-                    Show Title
-                  </label>
-                </div>
-              </div>
+                            <div className="control-group">
+                                <h4>Text Content</h4>
+                                <div className="control-row">
+                                    <label>
+                                        Text:
+                                        <input
+                                            type="text"
+                                            value={iconLineText}
+                                            onChange={(e) => setIconLineText(e.target.value)}
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-              <div className="control-group">
-                <h4>Text Content</h4>
-                <div className="control-row">
-                  <label>
-                    Title:
-                    <input
-                      type="text"
-                      value={whatYouNeedTitle}
-                      onChange={(e) => setWhatYouNeedTitle(e.target.value)}
-                    />
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                {/* MemberPerks Component Showcase */}
+                <section className="component-showcase">
+                    <div className="component-header">
+                        <h2>MemberPerks Component</h2>
+                        <p>List component for member benefits with icons</p>
+                    </div>
 
-        {/* SectionSupporting Component Showcase */}
-        <section className="component-showcase">
-          <div className="component-header">
-            <h2>SectionSupporting Component</h2>
-            <p>Content section with header, image, and description</p>
-          </div>
-          
-          <div className="component-demo">
-            <div className="component-preview">
-              <SectionSupporting
-                title={sectionSupportingTitle}
-                description={sectionSupportingDescription}
-                showImage={sectionSupportingShowImage}
-                showTitle={sectionSupportingShowTitle}
-                showDescription={sectionSupportingShowDescription}
-              />
-            </div>
-            
-            <div className="component-controls">
-              <h3>Controls</h3>
-              
-              <div className="control-group">
-                <h4>Boolean Toggles</h4>
-                <div className="control-row">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={sectionSupportingShowImage}
-                      onChange={(e) => setSectionSupportingShowImage(e.target.checked)}
-                    />
-                    Show Image
-                  </label>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={sectionSupportingShowTitle}
-                      onChange={(e) => setSectionSupportingShowTitle(e.target.checked)}
-                    />
-                    Show Title
-                  </label>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={sectionSupportingShowDescription}
-                      onChange={(e) => setSectionSupportingShowDescription(e.target.checked)}
-                    />
-                    Show Description
-                  </label>
-                </div>
-              </div>
+                    <div className="component-demo">
+                        <div className="component-preview">
+                            <MemberPerks
+                                title={memberPerksTitle}
+                                perks={memberPerksList}
+                                showTitle={memberPerksShowTitle}
+                            />
+                        </div>
 
-              <div className="control-group">
-                <h4>Text Content</h4>
-                <div className="control-row">
-                  <label>
-                    Title:
-                    <input
-                      type="text"
-                      value={sectionSupportingTitle}
-                      onChange={(e) => setSectionSupportingTitle(e.target.value)}
-                    />
-                  </label>
-                  <label>
-                    Description:
-                    <textarea
-                      value={sectionSupportingDescription}
-                      onChange={(e) => setSectionSupportingDescription(e.target.value)}
-                      rows={3}
-                    />
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                        <div className="component-controls">
+                            <h3>Controls</h3>
 
-        {/* Variable Library Showcase */}
-        <section className="component-showcase">
-          <div className="component-header">
-            <h2>Variable Library</h2>
-            <p>Complete design system variables including colors, spacing, and typography</p>
-          </div>
-          
-          <div className="variable-library-preview">
-            <VariableLibrary />
-          </div>
-        </section>
+                            <div className="control-group">
+                                <h4>Boolean Toggles</h4>
+                                <div className="control-row">
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={memberPerksShowTitle}
+                                            onChange={(e) => setMemberPerksShowTitle(e.target.checked)}
+                                        />
+                                        Show Title
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div className="control-group">
+                                <h4>Text Content</h4>
+                                <div className="control-row">
+                                    <label>
+                                        Title:
+                                        <input
+                                            type="text"
+                                            value={memberPerksTitle}
+                                            onChange={(e) => setMemberPerksTitle(e.target.value)}
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* WhatYouNeedToKnow Component Showcase */}
+                <section className="component-showcase">
+                    <div className="component-header">
+                        <h2>WhatYouNeedToKnow Component</h2>
+                        <p>List component with smart icon selection</p>
+                    </div>
+
+                    <div className="component-demo">
+                        <div className="component-preview">
+                            <WhatYouNeedToKnow
+                                title={whatYouNeedTitle}
+                                items={whatYouNeedList}
+                                showTitle={whatYouNeedShowTitle}
+                            />
+                        </div>
+
+                        <div className="component-controls">
+                            <h3>Controls</h3>
+
+                            <div className="control-group">
+                                <h4>Boolean Toggles</h4>
+                                <div className="control-row">
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={whatYouNeedShowTitle}
+                                            onChange={(e) => setWhatYouNeedShowTitle(e.target.checked)}
+                                        />
+                                        Show Title
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div className="control-group">
+                                <h4>Text Content</h4>
+                                <div className="control-row">
+                                    <label>
+                                        Title:
+                                        <input
+                                            type="text"
+                                            value={whatYouNeedTitle}
+                                            onChange={(e) => setWhatYouNeedTitle(e.target.value)}
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* SectionSupporting Component Showcase */}
+                <section className="component-showcase">
+                    <div className="component-header">
+                        <h2>SectionSupporting Component</h2>
+                        <p>Content section with header, image, and description</p>
+                    </div>
+
+                    <div className="component-demo">
+                        <div className="component-preview">
+                            <SectionSupporting
+                                title={sectionSupportingTitle}
+                                description={sectionSupportingDescription}
+                                showImage={sectionSupportingShowImage}
+                                showTitle={sectionSupportingShowTitle}
+                                showDescription={sectionSupportingShowDescription}
+                            />
+                        </div>
+
+                        <div className="component-controls">
+                            <h3>Controls</h3>
+
+                            <div className="control-group">
+                                <h4>Boolean Toggles</h4>
+                                <div className="control-row">
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={sectionSupportingShowImage}
+                                            onChange={(e) => setSectionSupportingShowImage(e.target.checked)}
+                                        />
+                                        Show Image
+                                    </label>
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={sectionSupportingShowTitle}
+                                            onChange={(e) => setSectionSupportingShowTitle(e.target.checked)}
+                                        />
+                                        Show Title
+                                    </label>
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={sectionSupportingShowDescription}
+                                            onChange={(e) => setSectionSupportingShowDescription(e.target.checked)}
+                                        />
+                                        Show Description
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div className="control-group">
+                                <h4>Text Content</h4>
+                                <div className="control-row">
+                                    <label>
+                                        Title:
+                                        <input
+                                            type="text"
+                                            value={sectionSupportingTitle}
+                                            onChange={(e) => setSectionSupportingTitle(e.target.value)}
+                                        />
+                                    </label>
+                                    <label>
+                                        Description:
+                                        <textarea
+                                            value={sectionSupportingDescription}
+                                            onChange={(e) => setSectionSupportingDescription(e.target.value)}
+                                            rows={3}
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Variable Library Showcase */}
+                <section className="component-showcase">
+                    <div className="component-header">
+                        <h2>Variable Library</h2>
+                        <p>Complete design system variables including colors, spacing, and typography</p>
+                    </div>
+
+                    <div className="variable-library-preview">
+                        <VariableLibrary />
+                    </div>
+                </section>
 
                 {/* Icons Showcase */}
                 <section className="component-showcase">

@@ -6,6 +6,7 @@ interface PanelHeaderProps {
     label?: string;
     title?: string;
     subtitle?: string;
+    showEyebrow?: boolean;
     showChevron?: boolean;
     showSub?: boolean;
     onClick?: () => void;
@@ -18,6 +19,7 @@ const PanelHeader: React.FC<PanelHeaderProps> = ({
     label = "What you'll get",
     title = "What you'll get",
     subtitle = "Sub",
+    showEyebrow = true,
     showChevron = true,
     showSub = true,
     onClick,
@@ -30,9 +32,11 @@ const PanelHeader: React.FC<PanelHeaderProps> = ({
             onClick={onClick}
             style={style}
         >
-            <div className="panel-header-label">
-                <p>{label}</p>
-            </div>
+            {showEyebrow && (
+                <div className="panel-header-label">
+                    <p>{label}</p>
+                </div>
+            )}
             <div className="panel-header-title">
                 <div className="panel-header-title-text">
                     <p>{title}</p>

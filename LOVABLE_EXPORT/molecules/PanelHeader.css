@@ -31,9 +31,9 @@
 .panel-header-title-text {
     font-family: var(--font-family-body);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 21px;
     color: var(--foreground-base-primary);
-    line-height: 32px;
+    line-height: 28px;
     flex: 1;
     min-width: 0;
 }
